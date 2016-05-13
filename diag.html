@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Диаграмма</title>
+  <style type="text/css">
+	body {
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	}
+   
+    #diagramm-wrapper {
+	width:1050px;
+	position:absolute;
+	margin: 0px
+	}
+	
+	#diagramm-wrapper ul {
+	list-style-type: none;
+	margin: 0px;
+	}
+	
+	#imgzone {
+	position:absolute;
+	top: 5px; 
+	left: 300px;
+	}
+	
+	#imgzone img{
+	position:absolute;
+	top: 0; 
+	left: 0;
+	}
+	
+	#shops li {
+	cursor: pointer;
+	width:230px;
+	margin: 10px 0 0 0;
+	}
+	
+	h2 {
+	padding-top: 2px;
+	padding-bottom: -1px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #336699;
+	border-bottom: 1px dashed #336699;
+    display: inline;
+	}
+	
+	.details{
+	width:230px;
+	margin:30px 0 0 10px;
+	font-size: 13px;
+	color: #949494;
+	border-rigth: 3px solid #949494;
+	display: none;
+	}
+	
+	.clicked h2 {
+	border-bottom: 1px dashed #CC0000;
+	color: #CC0000;
+	}
+	
+	.show {
+	display: block;
+	}
+	
+	
+	.opa {
+	opacity: 0.5
+	}
+   </style>
+   <script src="jquery-2.2.2.min.js"></script>
+   <script src="application.js"></script>
+ </head>
+ <body>
+<div id="diagramm-wrapper">	
+<ul id="shops">
+  <li class="shop labirint" data-imgsrc='png/diagramm-lab.png' data-details='На сайте магазина «Лабиринт» посетитель может найти большое количество информационных статей и разного контента, не связанного непосредственно с покупками. Также магазин отличают широкие возможности доставки: региональные пункты самовывоза, курьер, почта.'>
+      <h2>Лабиринт</h2>
+  </li>
+  <li class="shop bg" data-imgsrc='png/diagramm-bg.png' data-details='На сайте «Библио-Глобус» предусмотрен минимальный функционал для покупки, но широко освещаются мероприятия в офлайн магазине. Для доставки в города вне Московской области предлагаются услуги почты России, компаний DHL и TNT.'>
+      <h2>Библио-Глобус</h2>
+  </li>
+  <li class="shop chitai" data-imgsrc="png/diagramm-chitai.png" data-details='Офлайн магазины сети «Читай город» имеются в 110 городах России. Доставка возможна из магазинов сети, из пункта самовывоза, курьером, почтой. В региональных магазинах, как и в столичных, устраиваются образовательные мероприятия.'>
+      <h2>Читай-город</h2>
+  </li>
+  <li class="shop ozon" data-imgsrc="png/diagramm-ozon.png" data-details='Ozon.ru предоставляет самую подробную навигацию и инструментарий для подбора и покупки книг через интернет. Магазин имеет многочисленные пункты выдачи по всей стране, другие способы: курьером, в почтоматы, почтой.'>
+      <h2>Ozon.ru</h2>
+  </li>
+  <li class="shop moskva" data-imgsrc="png/diagramm-msk.png" data-details='Интернет-магазин «Москва» предлагает доставку в регионы через компанию DHL. Международная доставка на сайте не упоминается. Сайты магазинов «Библио-Глобус» и «Москва» в рассмотренных срезах похожи, вероятно, потому что оба сайта представляют известные офлайн магазины.'>
+      <h2>Москва</h2>
+  </li>
+  <li class="shop respublica" data-imgsrc="png/diagramm-resp.png" data-details='Магазины «Республика» характеризуется избирательностью в отношении ассортимента, наличием офлайн магазина в Санкт-Петербурге и набором событий и мероприятий. Доставка в регионы возможна через почтоматы и компанию «СПСР-Экспресс».'>
+      <h2>Республика</h2>
+  </li>
+  <li class="shop mdk" data-imgsrc="png/diagramm-mdk.png" data-details='Магазин «Московский Дом Книги» имеет в своем ассортименте специальную литературу. Также он выделяется форматом и содержанием мероприятий, которые проходят в офлайн магазинах сети. Доставка в регионы осуществляется почтой России, в другие страны - компанией TNT.'>
+      <h2>Московский Дом Книги</h2>
+  </li>
+ </ul>
+
+<div id='imgzone'>
+ <img src="png/diagramm-empty.png"/>
+</div>
+ </div>
+ </body>
+</html>
