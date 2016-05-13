@@ -1,0 +1,65 @@
+	body {
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	}
+   
+	#diagramm-wrapper {
+	width:1050px;
+	position:absolute;
+	margin: 0px
+	}
+	
+	#diagramm-wrapper ul {
+	list-style-type: none;
+	margin: 0px;
+	}
+	
+	#imgzone {
+	position:absolute;
+	top: 5px; 
+	left: 300px;
+	}
+	
+	#imgzone img{
+	position:absolute;
+	top: 0; 
+	left: 0;
+	}
+	
+	#shops li {
+	cursor: pointer;
+	width:230px;
+	margin: 10px 0 0 0;
+	}
+	
+	h2 {
+	padding-top: 2px;
+	padding-bottom: -1px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #336699;
+	border-bottom: 1px dashed #336699;
+    display: inline;
+	}
+	
+	.details{
+	width:230px;
+	margin:30px 0 0 10px;
+	font-size: 13px;
+	color: #949494;
+	border-rigth: 3px solid #949494;
+	display: none;
+	}
+	
+	.clicked h2 {
+	border-bottom: 1px dashed #CC0000;
+	color: #CC0000;
+	}
+	
+	.show {
+	display: block;
+	}
+	
+	
+	.opa {
+	opacity: 0.5
+	}
